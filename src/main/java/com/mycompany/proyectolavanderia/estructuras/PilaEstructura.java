@@ -10,22 +10,22 @@ package com.mycompany.proyectolavanderia.estructuras;
  */
 public interface PilaEstructura {
 
-    public void apilar(Object dato);
+    void apilar(Object dato);
 
-    public void desapilar();
+    Object desapilar();
 
-    public void peek();
+    Object peek();
 
-    public void tamanio();
+    int tamanio();
 
-    public void esVacia();
+    boolean esVacia();
 
-    public void contiene(Object dato);
+    boolean contiene(Object dato);
 
-    public void limpiar();
+    void limpiar();
 
-    public void mostrar();
+    void mostrar();
 
-    public void buscar(Object dato);
+    Object buscar(Object dato);
 
 }

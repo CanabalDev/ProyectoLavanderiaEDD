@@ -10,30 +10,30 @@ package com.mycompany.proyectolavanderia.estructuras;
  */
 public interface ListaEstructura {
 
-    public void agregar(Object dato);
+    void agregar(Object dato);
 
-    public void agregarAlInicio(Object dato);
+    void agregarAlInicio(Object dato);
 
-    public void agregarEnPosicion(int indice, Object dato);
+    void agregarEnPosicion(int indice, Object dato);
 
-    public void eliminarPrimero();
+    Object eliminarPrimero();
 
-    public void eliminarUltimo();
+    Object eliminarUltimo();
 
-    public void eliminarEnPosicion(int indice);
+    Object eliminarEnPosicion(int indice);
 
-    public void buscarDato(int indice);
+    Object buscarDato(int indice);
 
-    public void buscarDato(Object dato);
+    Object buscarDato(Object dato);
 
-    public void contiene(Object dato);
+    boolean contiene(Object dato);
 
-    public void cuentaElementos();
+    int cuentaElementos();
 
-    public void limpiar();
+    void limpiar();
 
-    public void mostrarAdelante();
+    void mostrarAdelante();
 
-    public void mostrarAtras();
+    void mostrarAtras();
 
 }

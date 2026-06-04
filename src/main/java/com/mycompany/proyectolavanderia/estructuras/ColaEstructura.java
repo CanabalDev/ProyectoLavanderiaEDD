@@ -10,20 +10,20 @@ package com.mycompany.proyectolavanderia.estructuras;
  */
 public interface ColaEstructura {
 
-    public void encolar(Object dato);
+    void encolar(Object dato);
 
-    public void desencolar();
+    Object desencolar();
 
-    public void peek();
+    Object peek();
 
-    public void tamanio();
+    int tamanio();
 
-    public void esVacia();
+    boolean esVacia();
 
-    public void contiene(Object dato);
+    boolean contiene(Object dato);
 
-    public void limpiar();
+    void limpiar();
 
-    public void mostrar();
+    void mostrar();
 
 }
