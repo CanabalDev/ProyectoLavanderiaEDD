@@ -8,6 +8,8 @@ import java.util.Objects;
  */
 public class OrdenLavado {
 
+    private static int consecutivo = 1;
+
     private String codigoOrden;
     private String nombreCliente;
     private String tipoPrenda;
@@ -15,10 +17,11 @@ public class OrdenLavado {
     private String estado;
 
     public OrdenLavado() {
+        this.codigoOrden = String.format("ORD%03d", consecutivo++);
     }
 
-    public OrdenLavado(String codigoOrden, String nombreCliente, String tipoPrenda, double pesoKg, String estado) {
-        this.codigoOrden = codigoOrden;
+    public OrdenLavado(String nombreCliente, String tipoPrenda, double pesoKg, String estado) {
+        this.codigoOrden = String.format("ORD%03d", consecutivo++);
         this.nombreCliente = nombreCliente;
         this.tipoPrenda = tipoPrenda;
         this.pesoKg = pesoKg;
@@ -27,10 +30,6 @@ public class OrdenLavado {
 
     public String getCodigoOrden() {
         return codigoOrden;
-    }
-
-    public void setCodigoOrden(String codigoOrden) {
-        this.codigoOrden = codigoOrden;
     }
 
     public String getNombreCliente() {
