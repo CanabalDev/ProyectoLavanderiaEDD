@@ -1,7 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package com.mycompany.proyectolavanderia;
 
 /**
@@ -11,6 +10,11 @@ package com.mycompany.proyectolavanderia;
 public class ProyectoLavanderia {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        SistemaLavanderia sistema
+                = new SistemaLavanderia();
+
+        sistema.iniciar();
+
     }
 }

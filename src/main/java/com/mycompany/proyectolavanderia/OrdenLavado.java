@@ -20,12 +20,12 @@ public class OrdenLavado {
         this.codigoOrden = String.format("ORD%03d", consecutivo++);
     }
 
-    public OrdenLavado(String nombreCliente, String tipoPrenda, double pesoKg, String estado) {
+    public OrdenLavado(String nombreCliente, String tipoPrenda, double pesoKg ) {
         this.codigoOrden = String.format("ORD%03d", consecutivo++);
         this.nombreCliente = nombreCliente;
         this.tipoPrenda = tipoPrenda;
         this.pesoKg = pesoKg;
-        this.estado = estado;
+        this.estado = "PENDIENTE";
     }
 
     public String getCodigoOrden() {

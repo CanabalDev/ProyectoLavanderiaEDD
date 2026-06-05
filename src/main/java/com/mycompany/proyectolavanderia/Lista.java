@@ -227,6 +227,9 @@ public class Lista implements ListaEstructura {
         while (actual != null) {
             System.out.println(actual.getDato());
             actual = actual.getSiguiente();
+            if (actual != null) {
+                System.out.println("------------------");
+            }
         }
     }
 
@@ -238,6 +241,9 @@ public class Lista implements ListaEstructura {
         while (actual != null) {
             System.out.println(actual.getDato());
             actual = actual.getAnterior();
+            if (actual != null) {
+                System.out.println("------------------");
+            }
         }
     }
 
