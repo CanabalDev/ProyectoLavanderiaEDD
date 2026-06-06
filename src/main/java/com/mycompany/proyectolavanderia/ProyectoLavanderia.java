@@ -14,7 +14,7 @@ public class ProyectoLavanderia {
         SistemaLavanderia sistema
                 = new SistemaLavanderia();
 
-        sistema.iniciar();
+        // sistema.iniciar();
 
     }
 }

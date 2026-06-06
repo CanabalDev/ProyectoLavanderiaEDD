@@ -15,12 +15,13 @@ public class OrdenLavado {
     private String tipoPrenda;
     private double pesoKg;
     private String estado;
+    private boolean delicado;
 
     public OrdenLavado() {
         this.codigoOrden = String.format("ORD%03d", consecutivo++);
     }
 
-    public OrdenLavado(String nombreCliente, String tipoPrenda, double pesoKg ) {
+    public OrdenLavado(String nombreCliente, String tipoPrenda, double pesoKg) {
         this.codigoOrden = String.format("ORD%03d", consecutivo++);
         this.nombreCliente = nombreCliente;
         this.tipoPrenda = tipoPrenda;
