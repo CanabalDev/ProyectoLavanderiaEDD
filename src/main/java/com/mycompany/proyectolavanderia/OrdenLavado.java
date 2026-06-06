@@ -21,11 +21,12 @@ public class OrdenLavado {
         this.codigoOrden = String.format("ORD%03d", consecutivo++);
     }
 
-    public OrdenLavado(String nombreCliente, String tipoPrenda, double pesoKg) {
+    public OrdenLavado(String nombreCliente, String tipoPrenda, double pesoKg, boolean delicado) {
         this.codigoOrden = String.format("ORD%03d", consecutivo++);
         this.nombreCliente = nombreCliente;
         this.tipoPrenda = tipoPrenda;
         this.pesoKg = pesoKg;
+        this.delicado = delicado;
         this.estado = "PENDIENTE";
     }
 
@@ -65,14 +66,25 @@ public class OrdenLavado {
         this.estado = estado;
     }
 
+    public boolean isDelicado() {
+        return delicado;
+    }
+
+    public void setDelicado(boolean delicado) {
+        this.delicado = delicado;
+    }
+
     @Override
     public String toString() {
 
-        return "Codigo: " + codigoOrden
+        return "--------------------------------\n"
+                + "Codigo: " + codigoOrden
                 + "\nCliente: " + nombreCliente
                 + "\nPrenda: " + tipoPrenda
                 + "\nPeso: " + pesoKg
-                + "\nEstado: " + estado;
+                + "\nEstado: " + estado
+                + "\nEs delicado?: " + (delicado ? "Si" : "No")
+                + "\n--------------------------------";
     }
 
     @Override

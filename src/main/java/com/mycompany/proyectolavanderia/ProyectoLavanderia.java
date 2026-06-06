@@ -13,8 +13,10 @@ public class ProyectoLavanderia {
 
         SistemaLavanderia sistema
                 = new SistemaLavanderia();
+        
+        sistema.cargarDatosPrueba();
 
-        // sistema.iniciar();
+        sistema.iniciar();
 
     }
 }
